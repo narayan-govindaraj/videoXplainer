@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+.videoxplainer/
+finalize.py
+run_checks.ps1
+check-results.txt
