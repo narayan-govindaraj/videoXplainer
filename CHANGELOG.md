@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.3
+- Requires Python 3.11 or newer. Current yt-dlp needs 3.11+, and older Pythons would be stuck on a frozen, outdated yt-dlp that YouTube changes will break.
+- README: corrected the language-support note (real vs synthetic test data).
+
 ## 0.3.2
 - Cleaner auto-detected section headings (no contractions or conversational filler).
 - `check` prints full error messages (including the list of available caption languages).

@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "videoxplainer"
-version = "0.3.2"
+version = "0.3.3"
 description = "Turn YouTube videos into token-budgeted, evidence-checked action briefs for LLMs."
 readme = "README.md"
 license = "MIT"
 authors = [{ name = "Narayan Govindaraj" }]
 keywords = ["youtube", "transcript", "summary", "llm", "claude", "mcp", "token", "yt-dlp", "chapters"]
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = ["yt-dlp>=2025.1.1"]
 classifiers = [
   "Development Status :: 4 - Beta",

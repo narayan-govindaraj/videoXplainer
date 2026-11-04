@@ -4,7 +4,7 @@
 
 [![ci](https://github.com/narayan-govindaraj/videoxplainer/actions/workflows/ci.yml/badge.svg)](https://github.com/narayan-govindaraj/videoxplainer/actions)
 ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
-![python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)
+![python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
 
 Most "YouTube summarizer" tools paste the whole transcript into your chat. That burns your context window, and nothing stops the model from inventing points the video never made.
 
@@ -62,7 +62,7 @@ Unsupported means the quote the model cited isn't in the video: drop or fix that
 | Windows install documented | Yes | Yes | no (Linux/macOS) | Yes | Yes |
 | Sources beyond YouTube | local subtitle/transcript files | - | - | articles, files, audio/video files | **11+** |
 | Speech-to-text fallback | - (roadmap) | - | - | Yes (OpenAI API) | **Whisper** |
-| Runtime | Python 3.9+ | Python 3.13+, uv | Claude Code skill | Go binary | Python or Docker |
+| Runtime | Python 3.11+ | Python 3.13+, uv | Claude Code skill | Go binary | Python or Docker |
 
 `-` means I found nothing in the README or code (I read each project's repository in November 2026). Found a mistake? Please open an issue.
 
@@ -123,7 +123,7 @@ If YouTube asks you to prove you're not a bot: `--cookies-from-browser firefox` 
 - Auto-detected sections are a heuristic. YouTube's own chapters are used whenever they exist. On two real talks with known chapters, detection from the text alone put 6 of 11 cuts within a minute of a real chapter start and recovered 7 of 25 real chapter starts; its headings are keyword lists (summary mode asks your assistant to rename them). Run `videoxplainer check <url>` to see how it does on your video.
 - `verify` proves a quote exists in the video. It can't tell you the advice is good.
 - Token counts are conservative estimates (about 4 characters per token for Latin text, heavier for other scripts).
-- Works with any language written with spaces between words (tested on English, Hindi, Tamil text). Chinese and Japanese aren't word-segmented yet, so section detection and quote matching are weaker there.
+- Tested on real English, Bengali, Arabic and Bulgarian captions, and on synthetic Hindi and Tamil text. Chinese, Japanese and Thai aren't word-segmented, so section detection and quote matching may be weaker there.
 - YouTube changes things; if caption downloads break, update yt-dlp first (`pip install -U yt-dlp`).
 - Use it for your own research and respect creators' rights and YouTube's terms.
 
