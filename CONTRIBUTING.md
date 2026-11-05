@@ -3,7 +3,7 @@
 Small, focused PRs are welcome.
 
 ```bash
-git clone https://github.com/narayan-govindaraj/videoxplainer && cd videoxplainer
+git clone https://github.com/narayan-govindaraj/videoXplainer && cd videoXplainer
 python -m pip install -e ".[dev]"
 python -m pytest -q
 ```

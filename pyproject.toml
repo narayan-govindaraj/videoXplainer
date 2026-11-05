@@ -38,6 +38,6 @@ testpaths = ["tests"]
 pythonpath = ["src"]
 
 [project.urls]
-Homepage = "https://github.com/narayan-govindaraj/videoxplainer"
-Issues = "https://github.com/narayan-govindaraj/videoxplainer/issues"
-Changelog = "https://github.com/narayan-govindaraj/videoxplainer/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/narayan-govindaraj/videoXplainer"
+Issues = "https://github.com/narayan-govindaraj/videoXplainer/issues"
+Changelog = "https://github.com/narayan-govindaraj/videoXplainer/blob/main/CHANGELOG.md"

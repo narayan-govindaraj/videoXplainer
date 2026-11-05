@@ -1,8 +1,13 @@
-# VideoXplainer
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/narayan-govindaraj/videoXplainer/main/docs/brand/logo-lockup-dark.png">
+    <img src="https://raw.githubusercontent.com/narayan-govindaraj/videoXplainer/main/docs/brand/logo-lockup-light.png" alt="VideoXplainer" width="440">
+  </picture>
+</p>
 
 **Your AI reads 4k tokens instead of 18k, and every claim comes with a quote you can check.**
 
-[![ci](https://github.com/narayan-govindaraj/videoxplainer/actions/workflows/ci.yml/badge.svg)](https://github.com/narayan-govindaraj/videoxplainer/actions)
+[![ci](https://github.com/narayan-govindaraj/videoXplainer/actions/workflows/ci.yml/badge.svg)](https://github.com/narayan-govindaraj/videoXplainer/actions)
 ![license: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
 
@@ -14,9 +19,11 @@ videoxplainer sits between the video and your assistant (Claude Code, Claude Des
 - **Makes claims checkable.** Ask for actions *with verbatim quotes*, then `videoxplainer verify` confirms each quote really appears in the video, and where.
 - **Needs no API key and no LLM of its own.** Your assistant does the reading; videoxplainer does the plumbing. One `pipx install`, no Node, no compiler.
 
+![VideoXplainer demo: a 1-hour talk condensed to 4,000 tokens across 21 chapters, then every quote checked](https://raw.githubusercontent.com/narayan-govindaraj/videoXplainer/main/docs/demo.gif)
+
 ## See it work
 
-A real run on a public 1-hour talk (59:48):
+The animation above wraps motion graphics around this real run on a public 1-hour talk (59:48). Transcript passages are elided, and the assistant reply and claim cards in the animation are illustrative examples:
 
 ```text
 $ videoxplainer fetch zjkBMFhNj_g --budget 4000 --mode summary
@@ -80,7 +87,7 @@ videoxplainer doctor              # checks your setup (`vxp` is a short alias fo
 ```
 
 Windows: `py -m pip install videoxplainer`, then run it as `py -m videoxplainer ...` if `videoxplainer` isn't on your PATH.
-Until the first PyPI release: `pipx install git+https://github.com/narayan-govindaraj/videoxplainer`.
+Until the first PyPI release: `pipx install git+https://github.com/narayan-govindaraj/videoXplainer`.
 
 With Claude Code, run `videoxplainer install-skill` (it writes one file, `~/.claude/skills/videoxplainer/SKILL.md`, and tells you where), restart Claude Code, then paste a video link. Other agents: `videoxplainer install-skill --print` shows the instructions to paste into theirs. Claude Desktop needs an MCP server, which is on the roadmap.
 
